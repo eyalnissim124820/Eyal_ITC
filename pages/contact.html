@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Contact</title>
+
+</head>
+
+<body>
+  <!-- NAVAGATION_BAR -->
+  <div class="top-navigation-bar">
+    <div class="navigation-buttons">
+      <ul>
+        <li><a id="navigation-button-home" href="../index.html">Home</a></li>
+        <li><a id="navigation-button-about" href="./about.html">About</a></li>
+        <li><a id="navigation-button-contact" href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- PAGE_CONTAINER -->
+  <div class="page-container">
+    <!-- CONTACT_FORM_CONTAINER -->
+    <div class="form-container">
+      <h1 id="form-title">Contact Me</h1>
+      <form class="form-fields" action="https://formspree.io/f/xqkjknko" method="post">
+
+        <label for="name-first">First Name</label><br>
+        <input type="text" class="required-cell" id="name-first" name="first name" placeholder="Your First Name"
+          required onkeyup="enableSubmit()"><br>
+
+        <label for="name-last">Last Name</label><br>
+        <input type="text" class="form-cell" id="name-last" name="last name" placeholder="Your Last Name"><br>
+
+        <label for="email-input">Email</label><br>
+        <input type="email" class="required-cell" id="email-input" name="email" placeholder="Your Email" required
+          onkeyup="enableSubmit()"><br>
+
+        <label for="comment">Add Your Comment</label><br>
+        <input type="text" class="required-cell" id="comment" name="comment" size="50" placeholder="Your comment"
+          required onkeyup="enableSubmit()"><br>
+
+        <label for="availableTime">Which one is the best hour to contact you?</label><br>
+        <input type="time" class="required-cell" id="availableTime" name="available time" required
+          onchange="enableSubmit()"><br>
+        <p></p>
+        <input type="submit" disabled class="form-cell" name="submit" value="Submit" id="submit-button">
+      </form>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p id="footer-languages"></p>
+    <div class="footer-links">
+      <ul>
+        <li><a id="footer-button-home" href="../index.html">Home</a></li>
+        <li><a id="footer-button-about" href="./about.html">About</a></li>
+        <li><a id="footer-button-contact" href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+<script src="../js/footer.js"></script>
+<script src="../js/form.js"></script>
+
+</html>
